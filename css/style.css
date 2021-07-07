@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #1acc1a;
-    --secondary-color: #a52a2ac2;
+    --primary-color: #26e626;
+    --secondary-color: #a52a2a8a;
 }
 
 * {
@@ -12,11 +12,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
-    font-weight: 500;
-}
-
-a {
-    list-style: none;
+    /* position: relative; */
 }
 
 .container {
@@ -24,146 +20,112 @@ a {
     margin: 0 auto;
 }
 
-.container-main-nav{
+.container-nav {
     display: flex;
-    /* justify-content: space-around; */
-       
+    justify-content: space-between;
 }
 
-.container-content .logo {
-    padding-top: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: initial;
-    font-weight: bold;
-    font-size: 20px;
+.logo {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
 }
 
-/* span */
-.span {
+.logo span {
     color: var(--secondary-color);
 }
-
-.g {
+.logo .span-g {
     color: var(--primary-color);
-    font-size: 25px;
 }
 
-.main ul {
+.container-nav ul {
     display: flex;
-    margin-left: 30px;
-    list-style: none;
-}
-.main ul li {
-   padding: 10px 30px;
+   list-style: none;
 }
 
-.main ul li a {
-    color: #444;
+.container-nav ul li {
+    padding: 10px 30px;
+}
+
+.container-nav ul li a {
     text-decoration: none;
-    transition: all 1s 0.4s ease;
+    transition: all 2s ease;
 }
 
-.main ul li a:hover {
-    color: red;
+.container-nav ul li a:hover {
     border-top: 5px solid var(--secondary-color);
+    color: salmon;
+}
 
-} 
-
-.side-button img {
-    /* content: ''; */
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    clip-path: circle(50% at right 40%);
+.side-button  {
+  margin-top: 10px;
 }
 
 .side-button a{
-    position: absolute;
-    right: 0;
-    top: 0;
     text-decoration: none;
-    color: #fff;
-    margin-top: 7px;
-    transition: all 1s 0.4s ease;
+    margin: 0 30px;
+    /* color: #fff; */
 }
 
-.side-button a:hover {
-    background: #ddd;
-    color: #444;
-}
-
-.log {
-    margin-right: 170px;
-    padding-top: 3px;
-}
-
-.sign {
-    display: inline-block;
-    width: 100px;
+.side-button button {
+    background: var(--primary-color);
     height: 30px;
-    padding-top: 3px;
-    text-align: center;
+    border: none;
     border-radius: 30px;
-    background: green;
+    cursor: pointer;
+    transition: all 2s ease;
 }
 
-.text {
-    position: absolute;
-    bottom: 130px;
-    font-size: 30px;
-    right: 0;
-    width: 380px;
+.side-button button a {
     color: #fff;
 }
+
+.side-button button:hover {
+    background: #ddd;
+}
+
 
 /* showcase */
-.content-showcase {
-    font-size: 40px;
-    margin-top: 180px;
+.showcase-content h1 {
+   margin: 70px 0;
+   font-size: 40px;
 }
 
-.content-showcase span {
+.showcase-content span {
     color: var(--secondary-color);
 }
 
-.content-showcase .cheri {
+.showcase-content .cheri {
     color: var(--primary-color);
 }
 
-.selectbox {
-    position: absolute;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .2);
-    width: 600px;
-    height: 45px;
-    border-radius: 30px;
-    margin: 70px 0;
-}
+
 .select {
     display: flex;
-    padding: 10px 20px;
-    text-align: center;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    padding-top: 10px;
+    width: 600px;
+    border-radius: 30px;
 }
 
 select {
-    /* padding: 20px; */
-    border: 0 !important;
-    margin: 0 20px;
+   margin: 0 10px;
+    border: none;
+    outline: none;
 }
 
 .button button {
     display: inline-block;
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
     background: var(--primary-color);
-    color: #fff;
-    border: none;
-    margin-left: 110px;
+    width: 100px;
+    height: 25px;
+    margin-bottom: 7px;
+    margin-left: 235px;
     border-radius: 30px;
-    /* margin-bottom: 8px; */
-    transition: all 1s 0.4s ease; 
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: all 2s ease;
 }
 
 .button button:hover {
@@ -171,18 +133,164 @@ select {
     color: #444;
 }
 
-.box-shadow {
-    width: 70%;
-    height: 200px;
-    margin-left: 60px;
-    margin-top: 20px;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, .2);
+/* boxes */
+.card-1 img {
+    height: 90%;
+    width: 250px;
+    position: relative;
+    left: 30%;
+    bottom: 20%;
+    border-radius: 5px;
+}
+.card-2 img {
+    height: 90%;
+    width: 250px;
+    position: relative;
+    left: 30%;
+    bottom: 20%;
+    border-radius: 5px;
+}
+.card-3 img {
+    height: 90%;
+    width: 250px;
+    position: relative;
+    left: 30%;
+    bottom: 20%;
+    border-radius: 5px;
 }
 
-/* box */
+.card-1 {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 190px;
+    border-radius: 5px;
+
+}
+.card-2 {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 190px;
+    border-radius: 5px;
+
+}
+
+.card-3 {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 190px;
+    border-radius: 5px;
+
+}
+
 .center {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 130px;
+}
+
+.boxes-content h1 {
     text-align: center;
-    font-size: 30px;
-    position: absolute;
-    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    color: #444;
+}
+
+.p {
+   position: absolute;
+   top: 630px;
+   width: 200px;
+   padding-left: 20px;
+}
+
+
+
+/* what */
+.container-what {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    margin: 120px 0;
+ }
+.main-img img {
+    width: 300px;
+}
+
+.main-img2 img {
+    position: relative;
+    right: 170px;
+    top: 50px;
+    width: 300px;
+     border-radius: 5px; 
+}
+
+
+.what h1 {
+    padding-top: 80px;
+    width: 300px;
+    color: #444;
+}
+.what p {
+    line-height: 1.7;
+    font-size: 20px;
+
+}
+
+
+
+/* donation */
+.donate-content {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 45px;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+}
+
+#background {
+    background: #ddd;
+}
+
+.donate-box h1 {
+    padding-top: 70px;
+}
+
+.donate-box p {
+    line-height: 1.7;
+}
+
+
+.img img {
+    height: 170px;
+    position: relative;
+    left: 170px;
+    top: 50px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.img-2 img {
+    height: 170px;
+    width: 300px;
+    border-radius: 5px;
+   
+}
+
+/* shadows  */
+.container-div {
+    display: flex;
+    position: relative;
+    max-width: 600px;
+    border: 2px solid #fff;
+    margin: 0 60px;
+    box-sizing: border-box;
+    padding:  20px;
+}
+
+.container-nav::after {
+   
 }
